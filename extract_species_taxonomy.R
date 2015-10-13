@@ -120,7 +120,7 @@ for(j in 1:num_group){
         #Parse kegg url
         kegg_doc <- htmlParse(kegg_url)
         #obtain organism taxonomy numbers
-        taxon_num <- xpathSApply(kegg_doc, path = "//a[9]", fun = 'xmlValue')
+        taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')
         #rbind get names
         taxonomy_names<- cbind(k,taxon_num)
         #write to file
@@ -145,13 +145,14 @@ library(RCurl)
 library(stringr)
     
 Get_species_num <- function(org_names){
+    org_names <- "coo"
 	names_abb <- org_names
     #assemble kegg url
     kegg_url <- sprintf("http://www.kegg.jp/kegg-bin/show_organism?org=%s", names_abb)
     #Parse kegg url
     kegg_doc <- htmlParse(kegg_url)
     #obtain organism taxonomy numbers
-    taxon_num <- xpathSApply(kegg_doc, path = "//a[9]", fun = 'xmlValue')
+    taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')[9]
     #use numbers to assemble ncbi url
     ncbi_url <- sprintf("http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=%s", taxon_num)
     #Parse ncbi url
@@ -179,7 +180,7 @@ Get_species_num <- function(org_names){
         uid <- str_extract_all(id, "(?<=&id=)(.*?)(?=&lvl)")
 
         if(length(uid) == 0){
-         	uid <- "NA"
+         	uid <- NA
         }else {
          	uid <- uid
         }
@@ -204,28 +205,23 @@ names <- read.csv("merge_fullnames_archaea_update.csv", header = FALSE)
 names <- as.character(names[[2]])
 names_spec <- names[1:81]
 len <- length(names_spec)
-#names <- matrix(c("name","Superspecies","species","subspecies","rank"), ,5)
-#create a dataframe
-names <- c("name","Superspecies","species","subspecies","rank")
-#taxon_frame <- data.frame(names)
-taxon_frame <- data.frame(rbind(names))
-taxon_frame <- sapply(taxon_frame[1,], as.character)
+
 for(i in 1:len){
 	#used time
 	time <- proc.time()
 	#retrieve the sepcise
-	taxon_spec <- Get_species_num(names_spec[i])
+	taxon_spec <- Get_species_num(names_spec[1])
 	taxon_spec <- as.character(taxon_spec)
-	#store as data.frame
-	taxon_frame <- data.frame(rbind(taxon_frame,taxon_spec))
-	#retrieve used time 
+	
+    #save to local disk
+    write.table(taxon_frame, file = "archeae_taxonomy_num.txt", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", append = TRUE)
+    Sys.sleep(3)
+    #retrieve used time 
     elapsed_time <- proc.time() - time
-	print(elapsed_time[3])
-	Sys.sleep(3)
-
+    print(elapsed_time[3])
 }
-#save to local disk
-write.table(taxon_frame, file = "archeae_taxonomy_num.txt", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", append = TRUE)
+
+
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
