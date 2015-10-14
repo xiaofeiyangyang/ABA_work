@@ -45,14 +45,14 @@ for(j in 1:num_group){
 ##################function to extract species#######################################
 library(XML)
 library(RCurl)
-Get_taxonomy <- function(abb_names){	
+Get_taxonomy <- function(abb_names){
     names_abb <- abb_names
     #assemble kegg url
     kegg_url <- sprintf("http://www.kegg.jp/kegg-bin/show_organism?org=%s", names_abb)
     #Parse kegg url
     kegg_doc <- htmlParse(kegg_url)
     #obtain organism taxonomy numbers
-    taxon_num <- xpathSApply(kegg_doc, path = "//a[9]", fun = 'xmlValue')
+    taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')[9]
     #use numbers to assemble ncbi url
     ncbi_url <- sprintf("http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=%s", taxon_num)
     #Parse ncbi url
@@ -95,9 +95,9 @@ Get_taxonomy <- function(abb_names){
 library(XML)
 library(RCurl)
 
-org_names <- read.table("abb_610_names.txt",head = FALSE)
+org_names <- read.table("archaea.txt",head = FALSE)
 org_names <- as.character(org_names[[1]])
-org_name_group <- org_names[1:610]
+org_name_group <- org_names[1:81]
 #initilize vactor
 i <- 1
 t <- 0
@@ -120,17 +120,17 @@ for(j in 1:num_group){
         #Parse kegg url
         kegg_doc <- htmlParse(kegg_url)
         #obtain organism taxonomy numbers
-        taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')
+        taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')[9]
         #rbind get names
         taxonomy_names<- cbind(k,taxon_num)
         #write to file
-        write.table(taxonomy_names, file="610bacteria_taxonomy_number.txt", sep = "\t", col.names = FALSE, quote = FALSE, append = TRUE, row.names = FALSE)  
+        write.table(taxonomy_names, file="81arc_taxonomy_number.txt", sep = "\t", col.names = FALSE, quote = FALSE, append = TRUE, row.names = FALSE)  
 	}
     
     elapsed_time <- proc.time() - time
 	print(elapsed_time[3])
 	#suspend 4 seconds because NCBI limit
-    Sys.sleep(4)
+    Sys.sleep(3)
 	t <- b
 	
 }
@@ -145,7 +145,6 @@ library(RCurl)
 library(stringr)
     
 Get_species_num <- function(org_names){
-    org_names <- "coo"
 	names_abb <- org_names
     #assemble kegg url
     kegg_url <- sprintf("http://www.kegg.jp/kegg-bin/show_organism?org=%s", names_abb)
@@ -210,11 +209,9 @@ for(i in 1:len){
 	#used time
 	time <- proc.time()
 	#retrieve the sepcise
-	taxon_spec <- Get_species_num(names_spec[1])
-	taxon_spec <- as.character(taxon_spec)
-	
+	taxon_spec <- Get_species_num(names_spec[i])
     #save to local disk
-    write.table(taxon_frame, file = "archeae_taxonomy_num.txt", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", append = TRUE)
+    write.table(taxon_spec, file = "archeae_taxonomy_num.txt", quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t", append = TRUE)
     Sys.sleep(3)
     #retrieve used time 
     elapsed_time <- proc.time() - time
@@ -224,6 +221,11 @@ for(i in 1:len){
 
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+########################################################################################
+# read data
+arc <- read.table("archeae_taxonomy_num.txt", header = FALSE, sep = "\t")
+# read data
+pro_data <- read.csv("30S12.txt", header = FALSE, sep = "\t")
 
 
 
