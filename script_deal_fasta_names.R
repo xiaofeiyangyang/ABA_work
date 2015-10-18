@@ -8,7 +8,6 @@ bac_names <- read.csv("merge_fullnames_archaea_update.csv", head = FALSE, string
 bac_names <- bac_names[['V2']]
 
 for(k in 1:len){
-	k <- 8
     pro_sequence <-readLines(files[k])
     #process the data
     len_pro <- length(pro_sequence)

@@ -1,14 +1,14 @@
 
-source('../API_ncbi_prodatabase.R')
+source('../ABA_work/API_ncbi_prodatabase.R')
 ##~~~~~~~~~~~~~~a short script for split names to some group and download~~~~~~~
 #read  data
-bac_names <- read.csv("81_bac_fullnames.txt", head = FALSE)
+bac_names <- read.csv("14eukaryotes_noabb.csv", head = FALSE)
 #process the data
 bac_names <- as.character(bac_names[[1]])
 
 
-bac_names_split <- bac_names[1:10]
-conserve_protein <- "30S Ribosomal protein S12"
+bac_names_split <- bac_names[1:14]
+conserve_protein <- "Ribosomal protein L13"
 # split organisms to group retrieve
 #initilize vocter
 i <- 1
@@ -34,9 +34,9 @@ for(j in 1:num_group){
     #write the protein to the location
 
     
-    write.table(hit_proteins, file="arc_ribosonmal_pro_s12.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
+    write.table(hit_proteins, file="euk14_Ribosomal_protein_s12.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
     #write the protein to the location
-    write.table(miss_retrieve, file="arc_ribosonmal_pro_s12_miss.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
+    write.table(miss_retrieve, file="euk14_Ribosomal_protein_s12_miss.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
     elapsed_time <- proc.time() - time
 	print(elapsed_time[3])
 	#suspend 4 seconds because NCBI limit
@@ -45,7 +45,3 @@ for(j in 1:num_group){
 	
 }
 
-
-#write.csv(group, file = paste0("names", as.character(j),".csv"),row.names = FALSE)
-
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
