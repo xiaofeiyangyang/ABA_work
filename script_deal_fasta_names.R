@@ -34,3 +34,27 @@ for(k in 1:len){
     write.table(update_seq, file = paste0("process_",files[k]), row.names = F, col.names = F, quote = F)
 
 }
+
+
+##~~~~~~~~~~~~~~~~~script to deal with fullnames to abb names~~~~~~~~~~~~~~~~~
+library(strings) 
+require('Biostrings')
+#read protein files names for folder
+files <- dir()
+filelen <- length(files)
+for(j in 1:filelen){
+    #read AA sequences
+    seqs <- readAAStringSet(files[j], format="fasta")
+    len <- length(seqs)
+    for(i in 1:len){
+     #get AA abb names
+    name <- strsplit(names(seqs)[i],":")[[1]][1]
+    #replacement full names by abbreviation names
+    names(seqs)[i] <- name
+}
+#overwrite to AA files
+writeXStringSet(seqs, paste0("process_",files[j]))
+
+}
+
+ #x<- sapply(, function(v) return(v[1]))
