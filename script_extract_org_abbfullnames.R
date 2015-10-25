@@ -27,25 +27,25 @@ extract_organ <- function(string){
 ##~~~~~~~~~~~~~~~~~~~~~read tabel and combine results~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-table <- read.csv("organism.csv", head = FALSE)
+table <- read.csv("eukaryotes.csv", head = FALSE)
 
 organ <- sapply(table, extract_organ)
 
 results <- cbind(organ[[1]], organ[[2]])
 
-write.csv(results, file = "output.csv", row.names = FALSE)
+write.csv(results, file = "output_eukaryotes.csv", row.names = FALSE)
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 ##~~~~~~~~~~~~~~~~~~~~~~merge two table get the same organisms~~~~~~~~~~~~~~~~~~
-x <- read.csv("full_name.csv", head=FALSE)
+x <- read.table("152eukaryotes.txt", head=FALSE)
 
-y <- read.csv("output.csv", head=TRUE)
+y <- read.csv("output_eukaryotes.csv", head=TRUE)
 
 mer <- merge(x, y,  all.x = T)
 
-write.csv(mer, file="merge_fullnames.csv")
+write.csv(mer, file="merge_fullnames_euk.csv", col.names = FALSE, row.names = FALSE)
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
