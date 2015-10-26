@@ -18,7 +18,9 @@ article_search <- function(art_name,pub_date){
     #id=4564646,646466,646466,........
     ids <- paste(uids, collapse = ",")
     #assemble the esummary URL
-    esummary <- sprintf("esummary.fcgi?db=%s&id=%s",db, ids)
+    esummary <- sprintf("esummary.fcgi?db=%s&id=%
+
+    s",db, ids)
 
     esum_url <- paste0(base_url, esummary)
     #parse the URL

@@ -34,9 +34,9 @@ for(j in 1:num_group){
     #write the protein to the location
 
     
-    write.table(hit_proteins, file="euk14_Ribosomal_protein_s12.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
+    write.table(hit_proteins, file="euk14_Ribosomal_protein_L13.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
     #write the protein to the location
-    write.table(miss_retrieve, file="euk14_Ribosomal_protein_s12_miss.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
+    write.table(miss_retrieve, file="euk14_Ribosomal_protein_L13_miss.txt",row.name = FALSE, col.name = FALSE, quote = FALSE, append = TRUE)
     elapsed_time <- proc.time() - time
 	print(elapsed_time[3])
 	#suspend 4 seconds because NCBI limit

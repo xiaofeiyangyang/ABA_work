@@ -28,6 +28,6 @@ for(i in 1:len){
         #remove the match sequences
         deal_seqs <- seqs[-index]
     }
-    #overwrite to files
+    #overwrite to filesp
     writeXStringSet(deal_seqs, filenames[i])
 }

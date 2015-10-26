@@ -21,5 +21,21 @@ y <- read.csv("output_bacteria.csv", head=TRUE)
 
 mer <- merge(x, y,  all.x = T)
 
-write.csv(mer, file="merge_fullnames_bacteria.csv")
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
