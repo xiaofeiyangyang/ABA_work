@@ -6,7 +6,7 @@ require('Biostrings')
 filenames <- dir()
 len <- length(filenames)
 #the abb names we want to remove
-abb_names <- c("ert:", "gpa:", "ndl:", "rix:", "rum:", "tpq:", "euc:", "hci:", "ypx:","csk:")
+abb_names <- c("pfd", "aag", "mcf", "c.owczarzaki", "pfa", "afv", "bor", "bze", "cal","cfa", "cim", "cnb", "dme", "dsi", "dosa","edi", "oas", "hgl")
 # initiliza vector
 lenabb <- length(abb_names)
 index <- vector(mode = "numeric", length = 0)
@@ -31,3 +31,5 @@ for(i in 1:len){
     #overwrite to filesp
     writeXStringSet(deal_seqs, filenames[i])
 }
+
+

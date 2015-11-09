@@ -37,7 +37,7 @@ for(k in 1:len){
 
 
 ##~~~~~~~~~~~~~~~~~script to deal with fullnames to abb names~~~~~~~~~~~~~~~~~
-library(strings) 
+library(stringr) 
 require('Biostrings')
 #read protein files names for folder
 files <- dir()
@@ -58,3 +58,5 @@ writeXStringSet(seqs, paste0("process_",files[j]))
 }
 
  #x<- sapply(, function(v) return(v[1]))
+
+

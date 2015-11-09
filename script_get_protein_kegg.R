@@ -6,8 +6,8 @@ require('Biostrings')
 #read data and process
 
 #read data
-abb_read <- read.table("abb_610_names.txt",head = FALSE, stringsAsFactors = FALSE)
-prokar_ko <- read.csv("14prokar_protein_ko.csv", head = FALSE, stringsAsFactors = FALSE)
+abb_read <- read.table("plants_abb.txt",head = FALSE, stringsAsFactors = FALSE, sep = "\t")
+prokar_ko <- read.csv("add_eukar_5protein_ko.csv", head = FALSE, stringsAsFactors = FALSE)
 pro_names <- str_trim(prokar_ko$V1)
 kegg_ko <- str_trim(prokar_ko$V2)
 pro_names <- pro_names
@@ -19,7 +19,6 @@ len <- length(abb_names)
 for(j in 1:len_ko){
 	#get KO list
      pro_kos <- kegg_ko[j]
-     pro_kos <- "K02890"
      kegg_list <- getKEGGKO(pro_kos)
      #intilization
      ko_num <- vector(mode = "character", length = 0)
@@ -52,7 +51,7 @@ for(j in 1:len_ko){
      write.table(miss_names, file = paste(mis_nams, "txt", sep = "."), quote = FALSE )
      Sys.sleep(5)
 }
-
+ 
 
 
 
@@ -128,8 +127,8 @@ library(stringr)
 library(KEGGBioCycAPI)
 #read data and process
 require('Biostrings')
-fullseq <- readBStringSet("euk_Leucyl-tRNA_synthetase.fasta")
-seqs <- readLines("euk_Leucyl-tRNA_synthetase.fasta")
+fullseq <- readBStringSet("Phenylalanine-tRNA synthethase alpha subunit.fasta")
+seqs <- readLines("Phenylalanine-tRNA synthethase alpha subunit.fasta")
 #extract abb names with mitochondrial
 mito <- seqs[grep("mitochondrial",seqs)]
 #str_extract_all(mito[1], "(?<=\\>)(.*?)(?=:)")
@@ -143,7 +142,7 @@ mito_names <- as.character(mito_names)
 abb_names <- mito_names
 len <- length(abb_names)
 #get KO list
-pro_kos <- ("K01869")
+pro_kos <- ("K01889")
 kegg_list <- getKEGGKO(pro_kos)
 #intilization
 ko_num <- list()
@@ -176,7 +175,7 @@ pro_seqs <- getKEGGGeneSeq(ko_nums, n = 2)
 gre <- grep("mitochondrial",names(pro_seqs))
 #should manual check length  seqs
 seqs <- pro_seqs[-gre]
-#seqs <- seqs[-c(2,4,22,35)]
+seqs <- seqs[-c(1,5,12,14)]
 
 #remove mitochondrial proteins forme local sequences
 gre2 <- grep("mitochondrial",names(fullseq))
@@ -186,5 +185,5 @@ rm_mito_full <- fullseq[-gre2]
 mer <- c(seqs,rm_mito_full)
 
 #write to file
-writeXStringSet(mer, "euk_Leucyl-tRNA_synthetase_remito.fasta")
+writeXStringSet(mer, "Phenylalanine-tRNA synthethase alpha subunit_remito.fasta")
 #write.table(miss_names, file = "euk_synthetase_leu_miss.txt", quote = FALSE )
