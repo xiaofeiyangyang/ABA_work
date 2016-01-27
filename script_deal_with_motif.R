@@ -237,10 +237,62 @@ utName <- ugt$UGT.symbol
 num <- 71:92
 num <- num[-7]
 len <- length(num)
-color <- rainbow_hcl(len)
+color <- rainbow(len)
 for(i in 1:len){
 
     index <- grep(num[i], utName)
     label <- paste(utName[index], color[i], sep = ",")
-    write.table(label, file = "strips.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(label, file = "strips_group.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+}
+
+
+
+#~~~~~~~~~~~~~~~~~~script to color range~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+setwd("/home/yangfang/mywork/112UGTphylogentic/")
+library("colorspace")
+ugt <- read.csv("112UGTs.csv", stringsAsFactors = FALSE)
+atName <- ugt$Locus.tag
+utName <- ugt$UGT.symbol
+num <- 71:92
+num <- num[-7]
+len <- length(num)
+color <- rainbow_hcl(len)
+for(i in 1:len){
+
+    index <- grep(num[i], utName)
+    label <- paste(utName[index],"range", color[i], paste0("family",num[i]), sep = "\t")
+    write.table(label, file = "range2.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+}
+
+
+
+
+
+
+motif <- readLines("112_all_motif_finally2.txt")
+
+
+for(k in seq_along(motif)){
+split <-  unlist(strsplit(motif[k], "\\|"))
+
+ gre <- grep("^\\d{1,3}$", split)
+ for(i in gre){
+    split[i] <- as.numeric(split[i]) + c(25)
+ }
+
+
+past <- paste0(split[1:length(split)-1],"|")
+past <- c(past , split[length(split)])
+
+
+j <- 1
+z <- NULL
+    while(j <= length(past)){
+        z <- paste0(z,past[j])
+        
+        j <- j+1
+    }
+
+write.table(z, file = "112_all_motif_finally3.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+
 }
