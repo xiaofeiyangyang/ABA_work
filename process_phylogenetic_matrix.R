@@ -28,8 +28,8 @@ extract_organisms <- function(pattern, all_organ){
 
 
 #read the table and give some preprocessing requre function extract_organisms
-ath834 <- read.table("merge.txt", head = TRUE)
-archaea <- read.table("270euk_abb_names.txt")
+ath834 <- read.table("834phy.txt", head = TRUE)
+archaea <- read.table("600bac_abbnames.txt")
 archaea <- as.character(archaea[,1])
 #Regular expression to pattern names
 #archaea <- paste("\\b", archaea, sep = "")
@@ -49,15 +49,15 @@ symbol_names <-extract_archeae$symbol
 symbol_names <- sub(pattern = "ath:", replacement = "", symbol_names)
 extract_archeae$symbol <- symbol_names
 #write the phylogenetic matrix
-write.table(extract_archeae, file="270euk_matrix.txt", quote = FALSE, sep = "\t", row.names = FALSE)
+write.table(extract_archeae, file="600bac_matrix.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ####################################################################################
 #a script change AT:XXXX names to we predict symbol
 # read data
-euk_mat <- read.table("270euk_matrix.txt", header = TRUE, stringsAsFactors = FALSE)
+euk_mat <- read.table("600bac_matrix.txt", header = TRUE, stringsAsFactors = FALSE)
 # read data
-tag <- read.csv("55ABAs.csv", header = TRUE, stringsAsFactors = FALSE)
+tag <- read.csv("112UGTs.csv", header = TRUE, stringsAsFactors = FALSE)
 len <- length(tag$Locus.tag)
 for(i in 1:len){
 	index <- grep(tag$Locus.tag[i], euk_mat$symbol)
@@ -65,7 +65,7 @@ for(i in 1:len){
 
 }
 
-write.table(euk_mat, file="270euk_matrix_for_ABA.txt", quote = FALSE, sep = "\t", row.names = FALSE)
+write.table(euk_mat, file="600bac_matrix_for_UGTs.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 
 
 

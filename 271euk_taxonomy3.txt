@@ -1,0 +1,271 @@
+api	Arthropoda	Insecta	Hemiptera	Aphididae	Acyrthosiphon	NA
+aag	Arthropoda	Insecta	Diptera	Culicidae	Aedes	NA
+aga	Arthropoda	Insecta	Diptera	Culicidae	Anopheles	Anopheles gambiae
+ame	Arthropoda	Insecta	Hymenoptera	Apidae	Apis	NA
+aly	Streptophyta	NA	Brassicales	Brassicaceae	Arabidopsis	Arabidopsis lyrata
+ath	Streptophyta	NA	Brassicales	Brassicaceae	Arabidopsis	NA
+ago	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Eremothecium	Eremothecium gossypii
+act	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus clavatus
+afv	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus flavus
+afm	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus fumigatus
+ani	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus nidulans
+ang	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus niger
+aor	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Aspergillus	Aspergillus oryzae
+bbo	Apicomplexa	Aconoidasida	NA	Babesiidae	Babesia	Babesia bovis
+bmor	Arthropoda	Insecta	Lepidoptera	Bombycidae	Bombyx	NA
+bta	Chordata	Mammalia	NA	Bovidae	Bos	NA
+bdi	Streptophyta	Liliopsida	Poales	Poaceae	Brachypodium	NA
+bfo	Chordata	NA	NA	Branchiostomidae	Branchiostoma	NA
+bmy	Nematoda	Chromadorea	Spirurida	Onchocercidae	Brugia	NA
+cbr	Nematoda	Chromadorea	Rhabditida	Rhabditidae	Caenorhabditis	NA
+cel	Nematoda	Chromadorea	Rhabditida	Rhabditidae	Caenorhabditis	NA
+cal	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Candida	Candida albicans
+cdu	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Candida	Candida dubliniensis
+cgr	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Nakaseomyces	Candida glabrata
+ctp	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Candida	Candida tropicalis
+cfa	Chordata	Mammalia	Carnivora	Canidae	Canis	Canis lupus
+cre	Chlorophyta	Chlorophyceae	Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	NA
+cin	Chordata	Ascidiacea	Enterogona	Cionidae	Ciona	NA
+clu	Ascomycota	Saccharomycetes	Saccharomycetales	Metschnikowiaceae	Clavispora	Clavispora lusitaniae
+cim	Ascomycota	Eurotiomycetes	Onygenales	NA	Coccidioides	Coccidioides immitis
+cpw	Ascomycota	Eurotiomycetes	Onygenales	NA	Coccidioides	Coccidioides posadasii
+cci	Basidiomycota	Agaricomycetes	Agaricales	Psathyrellaceae	Coprinopsis	Coprinopsis cinerea
+cnb	Basidiomycota	Tremellomycetes	Tremellales	Tremellaceae	Filobasidiella	Cryptococcus neoformans
+cqu	Arthropoda	Insecta	Diptera	Culicidae	Culex	NA
+cme	Eukaryota	Bangiophyceae	Cyanidiales	Cyanidiaceae	Cyanidioschyzon	Cyanidioschyzon merolae
+dre	Chordata	Actinopteri	Cypriniformes	Cyprinidae	Danio	NA
+dha	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Debaryomyces	Debaryomyces hansenii
+ddi	Eukaryota	NA	Dictyosteliida	NA	Dictyostelium	Dictyostelium discoideum
+dme	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dpo	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	Drosophila pseudoobscura
+ecu	Microsporidia	NA	NA	Unikaryonidae	Encephalitozoon	Encephalitozoon cuniculi
+edi	Eukaryota	NA	NA	NA	Entamoeba	Entamoeba dispar
+ehi	Eukaryota	NA	NA	NA	Entamoeba	Entamoeba histolytica
+fgr	Ascomycota	Sordariomycetes	Hypocreales	Nectriaceae	Fusarium	Fusarium graminearum
+gla	Eukaryota	NA	NA	Hexamitidae	Giardia	Giardia intestinalis
+hsa	Chordata	Mammalia	Primates	Hominidae	Homo	NA
+kla	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Kluyveromyces	Kluyveromyces lactis
+lbc	Basidiomycota	Agaricomycetes	Agaricales	Tricholomataceae	Laccaria	Laccaria bicolor
+lth	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Lachancea	Lachancea thermotolerans
+lbz	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Leishmania	Leishmania braziliensis
+lif	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Leishmania	Leishmania infantum
+lma	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Leishmania	Leishmania major
+lel	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Lodderomyces	Lodderomyces elongisporus
+mgr	Ascomycota	Sordariomycetes	Magnaporthales	Magnaporthaceae	Magnaporthe	Magnaporthe oryzae
+mgl	Basidiomycota	Malasseziomycetes	Malasseziales	Malasseziaceae	Malassezia	Malassezia globosa
+mtr	Streptophyta	NA	Fabales	Fabaceae	Medicago	NA
+mgp	Chordata	Aves	Galliformes	Phasianidae	Meleagris	NA
+pgu	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Meyerozyma	Meyerozyma guilliermondii
+mdo	Chordata	Mammalia	Didelphimorphia	Didelphidae	Monodelphis	NA
+mmu	Chordata	Mammalia	Rodentia	Muridae	Mus	NA
+nvi	Arthropoda	Insecta	Hymenoptera	Pteromalidae	Nasonia	NA
+nve	Cnidaria	Anthozoa	Actiniaria	Edwardsiidae	Nematostella	NA
+nfi	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Neosartorya	Neosartorya fischeri
+ncr	Ascomycota	Sordariomycetes	Sordariales	Sordariaceae	Neurospora	Neurospora crassa
+oaa	Chordata	Mammalia	Monotremata	Ornithorhynchidae	Ornithorhynchus	NA
+dosa	Streptophyta	Liliopsida	Poales	Poaceae	Oryza	Oryza sativa
+ola	Chordata	Actinopteri	Beloniformes	Adrianichthyidae	Oryzias	NA
+olu	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus 'lucimarinus'
+ota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus	NA
+ptm	Eukaryota	Oligohymenophorea	Peniculida	Parameciidae	Paramecium	Paramecium tetraurelia
+phu	Arthropoda	Insecta	Phthiraptera	Pediculidae	Pediculus	Pediculus humanus
+pcs	Ascomycota	Eurotiomycetes	Eurotiales	Aspergillaceae	Penicillium	Penicillium rubens
+pti	Bacillariophyta	Bacillariophyceae	Naviculales	Phaeodactylaceae	Phaeodactylum	Phaeodactylum tricornutum
+pno	Ascomycota	Dothideomycetes	Pleosporales	Phaeosphaeriaceae	Parastagonospora	Parastagonospora nodorum
+ppp	Streptophyta	Bryopsida	Funariales	Funariaceae	Physcomitrella	NA
+pif	Eukaryota	Oomycetes	Peronosporales	NA	Phytophthora	Phytophthora infestans
+pbe	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium berghei
+pcb	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium chabaudi
+pfh	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium falciparum
+pkn	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium knowlesi
+pvx	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium vivax
+pyo	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium yoelii
+pan	Ascomycota	Sordariomycetes	Sordariales	Lasiosphaeriaceae	Podospora	Podospora anserina
+pop	Streptophyta	NA	Malpighiales	Salicaceae	Populus	NA
+rcu	Streptophyta	NA	Malpighiales	Euphorbiaceae	Ricinus	NA
+sce	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Saccharomyces	Saccharomyces cerevisiae
+pic	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Scheffersomyces	Scheffersomyces stipitis
+smm	Platyhelminthes	Trematoda	Strigeidida	Schistosomatidae	Schistosoma	NA
+scm	Basidiomycota	Agaricomycetes	Agaricales	Schizophyllaceae	Schizophyllum	Schizophyllum commune
+spo	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	Schizosaccharomycetaceae	Schizosaccharomyces	Schizosaccharomyces pombe
+ssl	Ascomycota	Leotiomycetes	Helotiales	Sclerotiniaceae	Sclerotinia	Sclerotinia sclerotiorum
+smo	Streptophyta	NA	Selaginellales	Selaginellaceae	Selaginella	NA
+sbi	Streptophyta	Liliopsida	Poales	Poaceae	Sorghum	NA
+spu	Echinodermata	Echinoidea	Echinoida	Strongylocentrotidae	Strongylocentrotus	NA
+ssc	Chordata	Mammalia	NA	Suidae	Sus	NA
+tet	Eukaryota	Oligohymenophorea	Hymenostomatida	Tetrahymenidae	Tetrahymena	Tetrahymena thermophila
+tps	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira pseudonana
+tan	Apicomplexa	Aconoidasida	NA	Theileriidae	Theileria	Theileria annulata
+tpv	Apicomplexa	Aconoidasida	NA	Theileriidae	Theileria	Theileria parva
+tgo	Apicomplexa	Coccidia	Eucoccidiorida	Sarcocystidae	Toxoplasma	Toxoplasma gondii
+tca	Arthropoda	Insecta	Coleoptera	Tenebrionidae	Tribolium	NA
+tva	Eukaryota	NA	Trichomonadida	Trichomonadidae	Trichomonas	Trichomonas vaginalis
+tad	Placozoa	NA	NA	NA	Trichoplax	NA
+tbr	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Trypanosoma	Trypanosoma brucei
+tcr	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Trypanosoma	Trypanosoma cruzi
+ure	Ascomycota	Eurotiomycetes	Onygenales	Onygenaceae	Uncinocarpus	Uncinocarpus reesii
+vpo	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Vanderwaltozyma	Vanderwaltozyma polyspora
+vvi	Streptophyta	NA	Vitales	Vitaceae	Vitis	NA
+vcn	Chlorophyta	Chlorophyceae	Chlamydomonadales	Volvocaceae	Volvox	Volvox carteri
+xtr	Chordata	Amphibia	Anura	Pipidae	Xenopus	NA
+yli	Ascomycota	Saccharomycetes	Saccharomycetales	Dipodascaceae	Yarrowia	Yarrowia lipolytica
+zma	Streptophyta	Liliopsida	Poales	Poaceae	Zea	NA
+zro	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Zygosaccharomyces	Zygosaccharomyces rouxii
+bfu	Ascomycota	Leotiomycetes	Helotiales	Sclerotiniaceae	Botrytis	Botrytis cinerea
+hmg	Cnidaria	Hydrozoa	Anthoathecata	Hydridae	Hydra	NA
+ppa	Ascomycota	Saccharomycetes	Saccharomycetales	Phaffomycetaceae	Komagataella	Komagataella pastoris
+tru	Chordata	Actinopteri	Tetraodontiformes	Tetraodontidae	Takifugu	NA
+abe	Ascomycota	Eurotiomycetes	Onygenales	Arthrodermataceae	Arthroderma	Arthroderma benhamiae
+acan	Eukaryota	NA	Longamoebia	NA	Acanthamoeba	Acanthamoeba castellanii
+acs	Chordata	NA	Squamata	Iguanidae	Anolis	NA
+adl	Basidiomycota	Agaricomycetes	Auriculariales	Auriculariaceae	Auricularia	Auricularia delicata
+aje	Ascomycota	Eurotiomycetes	Onygenales	Ajellomycetaceae	Histoplasma	Histoplasma capsulatum
+amj	Chordata	NA	Crocodylia	Alligatoridae	Alligator	NA
+aml	Chordata	Mammalia	Carnivora	Ursidae	Ailuropoda	NA
+apla	Chordata	Aves	Anseriformes	Anatidae	Anas	NA
+aqu	Porifera	Demospongiae	Haplosclerida	Niphatidae	Amphimedon	NA
+asn	Chordata	NA	Crocodylia	Alligatoridae	Alligator	NA
+atr	Streptophyta	NA	Amborellales	Amborellaceae	Amborella	NA
+bacu	Chordata	Mammalia	Cetacea	Balaenopteridae	Balaenoptera	Balaenoptera acutorostrata
+bcom	Ascomycota	Dothideomycetes	Capnodiales	Teratosphaeriaceae	Baudoinia	Baudoinia panamericana
+beq	Apicomplexa	Aconoidasida	NA	Babesiidae	Babesia	NA
+bom	Chordata	Mammalia	NA	Bovidae	Bos	NA
+bor	Ascomycota	Dothideomycetes	Pleosporales	Pleosporaceae	Bipolaris	Bipolaris oryzae
+bpg	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	NA
+bsc	Ascomycota	Dothideomycetes	Pleosporales	Pleosporaceae	Bipolaris	Bipolaris sorokiniana
+bze	Ascomycota	Dothideomycetes	Pleosporales	Pleosporaceae	Bipolaris	Bipolaris zeicola
+cam	Streptophyta	NA	Fabales	Fabaceae	Cicer	NA
+ccp	Eukaryota	Florideophyceae	Gigartinales	Gigartinaceae	Chondrus	NA
+cfr	Chordata	Mammalia	NA	Camelidae	Camelus	NA
+cge	Chordata	Mammalia	Rodentia	Cricetidae	Cricetulus	NA
+cgi	Basidiomycota	Tremellomycetes	Tremellales	Tremellaceae	Filobasidiella	Cryptococcus gattii
+chx	Chordata	Mammalia	NA	Bovidae	Capra	NA
+cic	Streptophyta	NA	Sapindales	Rutaceae	Citrus	NA
+cit	Streptophyta	NA	Sapindales	Rutaceae	Citrus	NA
+clv	Chordata	Aves	Columbiformes	Columbidae	Columba	NA
+cmk	Chordata	Chondrichthyes	Chimaeriformes	Callorhinchidae	Callorhinchus	NA
+cmt	Ascomycota	Sordariomycetes	Hypocreales	Cordycipitaceae	Cordyceps	Cordyceps militaris
+cmy	Chordata	NA	Testudines	Cheloniidae	Chelonia	NA
+cne	Basidiomycota	Tremellomycetes	Tremellales	Tremellaceae	Filobasidiella	Cryptococcus neoformans
+cot	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Candida	Candida orthopsilosis
+cput	Basidiomycota	Agaricomycetes	Boletales	Coniophoraceae	Coniophora	Coniophora puteana
+crb	Streptophyta	NA	Brassicales	Brassicaceae	Capsella	NA
+csl	Chlorophyta	Trebouxiophyceae	NA	Coccomyxaceae	Coccomyxa	Coccomyxa subellipsoidea
+csv	Streptophyta	NA	Cucurbitales	Cucurbitaceae	Cucumis	NA
+cten	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Yamadazyma	Candida tenuis
+cthr	Ascomycota	Sordariomycetes	Sordariales	Chaetomiaceae	Chaetomium	Chaetomium thermophilum
+cvr	Chlorophyta	Trebouxiophyceae	Chlorellales	Chlorellaceae	Chlorella	NA
+dan	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+der	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dfa	Eukaryota	NA	Dictyosteliida	NA	Dictyostelium	NA
+dgr	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dmo	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dpe	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dpp	Eukaryota	NA	Dictyosteliida	NA	Dictyostelium	NA
+dse	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dsi	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dsq	Basidiomycota	Agaricomycetes	Polyporales	Polyporaceae	Dichomitus	Dichomitus squalens
+dvi	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dwi	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+dya	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	NA
+ecb	Chordata	Mammalia	Perissodactyla	Equidae	Equus	NA
+ehe	Microsporidia	NA	NA	Unikaryonidae	Encephalitozoon	Encephalitozoon hellem
+ehx	Eukaryota	NA	Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi
+ein	Microsporidia	NA	NA	Unikaryonidae	Encephalitozoon	Encephalitozoon intestinalis
+ela	Ascomycota	Sordariomycetes	Xylariales	Diatrypaceae	Eutypa	Eutypa lata
+erc	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Eremothecium	Eremothecium cymbalariae
+eus	Streptophyta	NA	Brassicales	Brassicaceae	Eutrema	NA
+fca	Chordata	Mammalia	Carnivora	Felidae	Felis	NA
+fme	Basidiomycota	Agaricomycetes	Hymenochaetales	Hymenochaetaceae	Fomitiporia	Fomitiporia mediterranea
+fve	Streptophyta	NA	Rosales	Rosaceae	Fragaria	Fragaria vesca
+ggo	Chordata	Mammalia	Primates	Hominidae	Gorilla	Gorilla gorilla
+gmx	Streptophyta	NA	Fabales	Fabaceae	Glycine	NA
+gsl	Eukaryota	Bangiophyceae	Cyanidiales	Cyanidiaceae	Galdieria	NA
+gtr	Basidiomycota	Agaricomycetes	Gloeophyllales	Gloeophyllaceae	Gloeophyllum	Gloeophyllum trabeum
+gtt	Eukaryota	Cryptophyta	Pyrenomonadales	Geminigeraceae	Guillardia	Guillardia theta
+hgl	Chordata	Mammalia	Rodentia	Bathyergidae	Heterocephalus	NA
+isc	Arthropoda	Arachnida	Ixodida	Ixodidae	Ixodes	NA
+kaf	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Kazachstania	Kazachstania africana
+lcm	Chordata	NA	Coelacanthiformes	Coelacanthidae	Latimeria	NA
+ldo	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Leishmania	NA
+lmi	Eukaryota	NA	Kinetoplastida	Trypanosomatidae	Leishmania	Leishmania mexicana
+loa	Nematoda	Chromadorea	Spirurida	Onchocercidae	Loa	NA
+lve	Chordata	Mammalia	Cetacea	Lipotidae	Lipotes	NA
+maj	Ascomycota	Sordariomycetes	Hypocreales	Clavicipitaceae	Metarhizium	Metarhizium robertsii
+maw	Ascomycota	Sordariomycetes	Hypocreales	Clavicipitaceae	Metarhizium	Metarhizium acridum
+mbe	Ascomycota	Leotiomycetes	Helotiales	Dermateaceae	Marssonina	Marssonina brunnea
+mcc	Chordata	Mammalia	Primates	Cercopithecidae	Macaca	NA
+mcf	Chordata	Mammalia	Primates	Cercopithecidae	Macaca	NA
+mis	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	NA
+mlr	Basidiomycota	Pucciniomycetes	Pucciniales	Melampsoraceae	Melampsora	Melampsora larici-populina
+mpp	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla
+mrr	Basidiomycota	Agaricomycetes	Agaricales	Marasmiaceae	Moniliophthora	Moniliophthora roreri
+mtm	Ascomycota	Sordariomycetes	Sordariales	Chaetomiaceae	Myceliophthora	Myceliophthora thermophila
+myb	Chordata	Mammalia	Chiroptera	Vespertilionidae	Myotis	NA
+myd	Chordata	Mammalia	Chiroptera	Vespertilionidae	Myotis	NA
+mze	Chordata	Actinopteri	Cichliformes	Cichlidae	Maylandia	NA
+nce	Microsporidia	NA	NA	Nosematidae	Nosema	Nosema ceranae
+ncs	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Naumovozyma	Naumovozyma castellii
+ndi	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Naumovozyma	Naumovozyma dairenensis
+nhe	Ascomycota	Sordariomycetes	Hypocreales	Nectriaceae	Fusarium	Nectria haematococca
+npa	Ascomycota	Dothideomycetes	Botryosphaeriales	Botryosphaeriaceae	Neofusicoccum	Neofusicoccum parvum
+oas	Chordata	Mammalia	NA	Bovidae	Ovis	NA
+obr	Streptophyta	Liliopsida	Poales	Poaceae	Oryza	NA
+osa	Streptophyta	Liliopsida	Poales	Poaceae	Oryza	Oryza sativa
+pale	Chordata	Mammalia	Chiroptera	Pteropodidae	Pteropus	NA
+pbi	Chordata	NA	Squamata	Pythonidae	Python	NA
+pbl	Ascomycota	Eurotiomycetes	Onygenales	NA	Paracoccidioides	Paracoccidioides lutzii
+pco	Basidiomycota	Agaricomycetes	Polyporales	Phanerochaetaceae	Phanerochaete	Phanerochaete carnosa
+pcy	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium cynomolgi
+pfa	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium falciparum
+pfd	Apicomplexa	Aconoidasida	Haemosporida	Plasmodiidae	Plasmodium	Plasmodium falciparum
+pfj	Ascomycota	Dothideomycetes	Capnodiales	Mycosphaerellaceae	Pseudocercospora	Pseudocercospora fijiensis
+pfp	Basidiomycota	Ustilaginomycetes	Ustilaginales	Ustilaginaceae	Anthracocystis	Anthracocystis flocculosa
+pgr	Basidiomycota	Pucciniomycetes	Pucciniales	Pucciniaceae	Puccinia	Puccinia graminis
+phd	Chordata	Mammalia	NA	Bovidae	Pantholops	NA
+phi	Chordata	Aves	Passeriformes	Paridae	Pseudopodoces	NA
+pon	Chordata	Mammalia	Primates	Hominidae	Pongo	NA
+pper	Streptophyta	NA	Rosales	Rosaceae	Prunus	NA
+pps	Chordata	Mammalia	Primates	Hominidae	Pan	NA
+psq	Basidiomycota	Agaricomycetes	Corticiales	Punctulariaceae	Punctularia	Punctularia strigosozonata
+pte	Ascomycota	Dothideomycetes	Pleosporales	Pleosporaceae	Pyrenophora	Pyrenophora teres
+ptg	Chordata	Mammalia	Carnivora	Felidae	Panthera	Panthera tigris
+ptr	Chordata	Mammalia	Primates	Hominidae	Pan	NA
+pvu	Streptophyta	NA	Fabales	Fabaceae	Phaseolus	NA
+rno	Chordata	Mammalia	Rodentia	Muridae	Rattus	NA
+shr	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Sarcophilus	NA
+shs	Basidiomycota	Agaricomycetes	Russulales	Stereaceae	Stereum	Stereum hirsutum
+sita	Streptophyta	Liliopsida	Poales	Poaceae	Setaria	NA
+sla	Basidiomycota	Agaricomycetes	Boletales	Serpulaceae	Serpula	Serpula lacrymans
+sly	Streptophyta	NA	Solanales	Solanaceae	Solanum	NA
+smp	Ascomycota	Sordariomycetes	Sordariales	Sordariaceae	Sordaria	Sordaria macrospora
+sot	Streptophyta	NA	Solanales	Solanaceae	Solanum	NA
+spaa	Ascomycota	Saccharomycetes	Saccharomycetales	Debaryomycetaceae	Spathaspora	Spathaspora passalidarum
+tbl	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Tetrapisispora	Tetrapisispora blattae
+tcc	Streptophyta	NA	Malvales	Malvaceae	Theobroma	NA
+tdl	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Torulaspora	NA
+tgu	Chordata	Aves	Passeriformes	Estrildidae	Taeniopygia	NA
+tmn	Ascomycota	Sordariomycetes	Calosphaeriales	Calosphaeriaceae	Togninia	Togninia minima
+tms	Basidiomycota	Tremellomycetes	Tremellales	Tremellaceae	Tremella	Tremella mesenterica
+tpf	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Tetrapisispora	Tetrapisispora phaffii
+tre	Ascomycota	Sordariomycetes	Hypocreales	Hypocreaceae	Trichoderma	Trichoderma reesei
+tsp	Nematoda	Enoplea	Trichocephalida	Trichinellidae	Trichinella	NA
+ttt	Ascomycota	Sordariomycetes	Sordariales	Chaetomiaceae	Thielavia	Thielavia terrestris
+tup	Chordata	Mammalia	Scandentia	Tupaiidae	Tupaia	NA
+tve	Ascomycota	Eurotiomycetes	Onygenales	Arthrodermataceae	Trichophyton	Trichophyton verrucosum
+val	Ascomycota	Sordariomycetes	Glomerellales	Plectosphaerellaceae	Verticillium	Verticillium alfalfae
+wse	Basidiomycota	Wallemiomycetes	Wallemiales	NA	Wallemia	Wallemia mellicola
+xla	Chordata	Amphibia	Anura	Pipidae	Xenopus	NA
+xma	Chordata	Actinopteri	Cyprinodontiformes	Poeciliidae	Xiphophorus	NA
+ztr	Ascomycota	Dothideomycetes	Capnodiales	Mycosphaerellaceae	Zymoseptoria	Zymoseptoria tritici
+T10017	Arthropoda	Branchiopoda	Diplostraca	Daphniidae	Daphnia	NA
+T10018	Streptophyta	NA	Fabales	Fabaceae	Lotus	NA
+T10013	Basidiomycota	Agaricomycetes	Polyporales	Phanerochaetaceae	Phanerochaete	Phanerochaete chrysosporium
+T10004	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Saccharomyces	Saccharomyces uvarum
+T10002	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Saccharomyces	Saccharomyces mikatae
+T10003	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Saccharomyces	Saccharomyces paradoxus
+T10005	Chordata	Actinopteri	Tetraodontiformes	Tetraodontidae	Tetraodon	NA
+T10008	Ascomycota	Saccharomycetes	Saccharomycetales	Saccharomycetaceae	Lachancea	Lachancea waltii
+eco	Proteobacteria	Gammaproteobacteria	Enterobacteriales	Enterobacteriaceae	Escherichia	Escherichia coli
+C.owczarza	Eukaryota	Ichthyosparea	NA	NA	Capsaspora	NA
+S.arctica	Eukaryota	Ichthyosparea	Ichthyophonida	NA	Shpaeroforma	NA

@@ -1,10 +1,10 @@
 #######################a script to extract abb orgnisms's taxonomy#################
 
 #read abbreviation names and procession
-
-org_names <- read.table("abb_610_names.txt",head = FALSE)
+setwd("/home/yangfang/mywork/eukaryotes/treeview/")
+org_names <- read.table("270euk_abb_names.txt",head = FALSE)
 org_names <- as.character(org_names[[1]])
-org_name_group <- org_names[1:610]
+org_name_group <- org_names[1:5]
 #initilize vactor
 i <- 1
 t <- 0
@@ -26,7 +26,7 @@ for(j in 1:num_group){
         #rbind get names
         taxonomy_names<- rbind(taxonomy_names)
         #write to file
-        write.table(taxonomy_names, file="610bacteria_taxonomy.txt", sep = "\t", col.names = FALSE, quote = FALSE, append = TRUE, row.names = FALSE)  
+        write.table(taxonomy_names, file="271euk_taxonomy4.txt", sep = "\t", col.names = FALSE, quote = FALSE, append = TRUE, row.names = FALSE)  
 	}
     
     elapsed_time <- proc.time() - time
@@ -52,17 +52,20 @@ Get_taxonomy <- function(abb_names){
     #Parse kegg url
     kegg_doc <- htmlParse(kegg_url)
     #obtain organism taxonomy numbers
-    taxon_num <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')[9]
+    taxon_num_all <- xpathSApply(kegg_doc, path = "//a", fun = 'xmlValue')
+    index_num <- grep("Taxonomy", taxon_num_all)+2
+    taxon_num <- taxon_num_all[index_num]
     #use numbers to assemble ncbi url
     ncbi_url <- sprintf("http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=%s", taxon_num)
     #Parse ncbi url
     ncbi_doc <- htmlParse(ncbi_url)
     #six taxonomy
-    taxon_name <- c("phylum", "class", "order", "family", "genus","species")
+    taxon_name <- c("kingdom","phylum", "class", "order", "family", "genus","species")
     #initialize
     len <- length(taxon_name)
     taxon_org <- vector(mode = "character", length = len)
     for(i in 1:len){
+        i <- 
     	#assemble the attribute
         att <- sprintf("//a[@alt='%s']",taxon_name[i])
 
