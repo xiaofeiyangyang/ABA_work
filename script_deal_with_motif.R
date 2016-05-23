@@ -1,5 +1,5 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~script get motif frome KEGG Database~~~~~~~~~~~~~~~~~~~~~~
-
+setwd("/home/yangfang/mywork/112UGTphylogentic/")
 library(KEGGAPI)
 #read csv
 ugt <- read.csv("112UGTs.csv", stringsAsFactors = FALSE)
@@ -22,7 +22,7 @@ for(i in 1:len){
     # add UGTs names
     motif$name <- utName[i]
     #write table to file
-    write.table(motif, file = "112_all_motif.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE, sep = "\t")	
+    write.table(motif, file = "112_all_motif_update.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE, sep = "\t")	
 }
 
 
@@ -30,7 +30,7 @@ for(i in 1:len){
 #~~~~~~~~~~~~~~~~~~ process domain text to which domain in the same length ~~~~~~~~~~~~~~~~~~~~~~~~~
 library(Biostrings)
 # read data and precess
-domain <- read.table("112_all_motif.txt", sep = '\t', stringsAsFactors = FALSE)
+domain <- read.table("112_all_motif_update.txt", sep = '\t', stringsAsFactors = FALSE)
 ugt <- read.csv("112UGTs.csv", stringsAsFactors = FALSE)
 atName <- ugt$Locus.tag
 atName <- paste0("ath:", atName)
@@ -72,7 +72,7 @@ for(j in seq_along(utName)){
     
     }
     #write the data to file
-    write.table(eachDomain, file = "112_all_motif_rem.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE, sep = "\t")
+    write.table(eachDomain, file = "112_all_motif_rem_update.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE, sep = "\t")
 }
 
 
@@ -82,12 +82,12 @@ for(j in seq_along(utName)){
 ##########################################################################################
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~deal data of domain to iTOL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~deal data of domain to iTOL remove("UGT81A1" "UGT81A3" "UGT81A4") at last~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #read data
 
 library(Biostrings)
 
-domain <- read.table("112_all_motif_rem_deal.txt", sep = '\t', stringsAsFactors = FALSE)
+domain <- read.table("112_all_motif_rem_deal_update.txt", sep = '\t', stringsAsFactors = FALSE)
 # get the AA numbers of each protein
 aaLen <- fasta.seqlengths("process_AtUGTPROT.fasta", nrec=-1L, skip=0L, seek.first.rec=FALSE, seqtype="B", use.names=TRUE)
 # get AA names
@@ -143,7 +143,7 @@ for(k in seq_along(UGTName)){
     # add the names and length to result
     asembleSp <- paste(ugtLen, sp, sep = ",")
     #write the data
-    write.table(asembleSp, file = "112_all_motif_finally.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(asembleSp, file = "112_all_motif_finally_update2.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
 }
 
 
@@ -192,11 +192,7 @@ attr <- function(motifName){
 		col <- "#7EC0EE"
 		Shape <- "PD"
 
-	} else if(motif == "pf:Tape_meas_lam_C"){
-		col <- "#9F79EE"
-		Shape <- "OC"
-
-	} else if(motif == "pf:Arg_repressor_C"){
+	}  else if(motif == "pf:Arg_repressor_C"){
 		col <- "#8B814C"
 		Shape <- "GP"
 
@@ -204,7 +200,7 @@ attr <- function(motifName){
 		col <- "#008B00"
 		Shape <- "OC"
 
-	}
+	}else{}
 	return(list(col = col, Shape = Shape))
 }
 
@@ -239,10 +235,10 @@ num <- num[-7]
 len <- length(num)
 color <- rainbow(len)
 for(i in 1:len){
-
+    i <- 1
     index <- grep(num[i], utName)
-    label <- paste(utName[index], color[i], sep = ",")
-    write.table(label, file = "strips_group.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    label <- paste(utName[index], color[i], paste0("COL",color[i]), sep = ",")
+    write.table(label, file = "strips_group_update.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
 }
 
 
@@ -296,3 +292,30 @@ z <- NULL
 write.table(z, file = "112_all_motif_finally3.txt", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
 }
+
+
+gff <- read.table("C_A_ref_gff_name2.txt",header = FALSE)
+gff2 <- as.character(unique(gff$V1))
+
+ref <- read.table("C_A_ref_name.fa",header = FALSE)
+ref <- as.character(unique(ref$V1))
+
+sum(sort(gff2) == sort(ref))
+
+setdiff(gff2,ref$V1)
+
+
+
+
+
+for(i in 1:length(gff2)){
+    for(j in 1:length(ref$V1)){
+        if(gff$V1[i] == ref$V1[j]){
+            result = gff$V[i]
+            write.table(result,"result.txt",quote = FALSE, col.names = FALSE)
+        }else{
+
+        }
+    }
+}
+

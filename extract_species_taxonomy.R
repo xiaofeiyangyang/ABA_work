@@ -4,7 +4,7 @@
 setwd("/home/yangfang/mywork/eukaryotes/treeview/")
 org_names <- read.table("270euk_abb_names.txt",head = FALSE)
 org_names <- as.character(org_names[[1]])
-org_name_group <- org_names[1:5]
+org_name_group <- org_names[1:271]
 #initilize vactor
 i <- 1
 t <- 0
